@@ -7,12 +7,12 @@ import qualified Data.ByteString.Lazy as L
 
 main :: IO()
 main = do
+    start <- getCurrentTime
     file <- head <$> getArgs
     regex <- head . tail <$> getArgs
     content <- L.readFile file
-    start <- getCurrentTime
     let result = content =~ regex :: Bool
     now <- getCurrentTime
-    let exec_time = diffUTCTime now start
-    print(result)
-    print(exec_time)
+    let exec_time = diffUTCTime now start 
+    putStrLn("Result: " ++ (show result))
+    putStrLn("Time: " ++ (show exec_time))
