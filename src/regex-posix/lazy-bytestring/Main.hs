@@ -10,12 +10,12 @@ import Text.Regex.Posix
 -- Then, Main prints whether the file matches the regex and how much time did it spend excecuting.
 main :: IO ()
 main = do
+     start <- getCurrentTime
      file <- head <$> getArgs
      regex <- head . tail <$> getArgs
      content <- L.readFile file
-     start <- getCurrentTime
      let result = content =~ regex :: Bool
      now <- getCurrentTime
      let exec_time = diffUTCTime now start
-     print(result)
-     print(exec_time)
+     putStrLn("Result: " ++ (show result))
+     putStrLn("Time: " ++ (show exec_time))
