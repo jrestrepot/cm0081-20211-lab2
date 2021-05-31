@@ -2,9 +2,7 @@
 module Main where
 
 import System.Environment
-import Data.List
 import Data.Time
-import Text.Regex.Posix.ByteString.Lazy
 import qualified Data.ByteString.Lazy as L
 import Text.Regex.Posix
 
