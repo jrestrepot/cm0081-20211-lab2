@@ -1,9 +1,7 @@
 -- Regex-Tdfa ByteString Lazy
 module Main where
 import System.Environment
-import Text.Regex.TDFA.ByteString.Lazy
 import Text.Regex.TDFA
-import Data.List
 import Data.Time
 import qualified Data.ByteString.Lazy as L
 
