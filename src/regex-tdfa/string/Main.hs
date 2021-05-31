@@ -2,7 +2,6 @@
 module Main where
 import System.Environment
 import Text.Regex.TDFA
-import Data.List
 import Data.Time
 
 main :: IO()
