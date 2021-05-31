@@ -1,9 +1,7 @@
 -- Regex-Tdfa ByteString
 module Main where
 import System.Environment
-import Text.Regex.TDFA.ByteString
 import Text.Regex.TDFA
-import Data.List
 import Data.Time
 import qualified Data.ByteString as BS
 
