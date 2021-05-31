@@ -7,4 +7,4 @@ Juliana Restrepo Tobar y Abelino Sepúlveda Estrada
 Linux Ubuntu 20.04.2 LTS
 
 
-GHC 8.10.3
+GHC 9.0.1  Stack 2.7.1
